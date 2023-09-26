@@ -5,64 +5,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap" rel="stylesheet">
-    <title>Card</title>
-</head>
-<body style="display:flex; height:100vh;">
-    <div style="
-        margin: 60px auto;
-        width: 800px;
-        height: fit-content;
-        border: 2px solid #dedede;
-        padding: 40px 50px 50px 50px;
-        border-radius: 16px;
-        box-shadow: 0 0 30px #ccc;
-        font-family: 'Poppins', sans-serif;
-        ">
-        <h1 style="margin: 0; padding: 0 0 8px 0;">About Me</h1>
-        <div style="display: flex; gap: 16px; justify-content: start; align-content: start; height: fit-content;">
-            <img src="/asset/me.jpg" alt="Photo"
-                 style="width: 250px; height: 250px; border-radius: 8px;">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-            <div style="display: flex; justify-content: start; align-items: start; flex-direction: column;">
-                <p style="font-weight: 300; margin: 0px; padding: 0 0 12px 4px;">Hi👋 I'm <span style="font-weight: 400;">Maruli Panggabean</span> a Product Designer that has 3 years experience and currently I want to develop my skill in programming. I will become a <span style="font-weight: 400;">Creative Developer</span> in 3 years, wish me luck!</p>
-                <div style="display: flex; width: 100%; height: 100%;">
-                    <div style="display: flex; justify-content: start; align-items: center; padding-left: 4px; height: fit-content; gap: 16px;">
-                        <div style="padding: 8px 16px 8px 16px; background-color: #0077b6; width: fit-content; border-radius: 50px;">
-                            <a style="text-decoration: none; color: white;" href="https://www.google.com/">Contact Me</a>
-                        </div>
-                        <div style="display: flex; justify-content: center; align-items: center; flex-direction: columns; gap: 6px;">
-                            <img src="/asset/downloads.png" alt="Download"
-                            style="width: 14px; height: 14px;">
-                            <a style="text-decoration: none;" href="https://www.google.com/"><p style="font-weight: 400; font-size: 12pt; color: #333;">Download CV</p></a>    
-                        </div>
+    <title>Maruli Panggabean</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./asset/ico.ico">
+</head>
+
+<body>
+    <!--Nav start-->
+    <nav>
+        <div class="nav-l">
+            <div class="logo">
+                <a href="#hero">Marupang</a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#about"><h5>About</h5></a>
+                    </li>
+                    <li>
+                        <a href="#skills"><h5>Skills</h5></a>
+                    </li>
+                    <li>
+                        <a href="#contact"><h5>Contact</h5></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="blog">
+            <a href="/blog.html"><h5>Blog</h5></a>
+        </div>
+    </nav>
+    <!--Nav end-->
+
+    <div class="hero" id="hero">
+        <div class="cont1">
+            <div>
+                <p><span style="font-style: italic;">Creative</span><br><span style="font-style: italic; padding-left: 120px;">Developer</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="about" id="about">
+        <div class="description">
+           <h6 style="font-weight: 300; font-size: 1.1rem;">Hi 👋<br>I'm <span style="font-weight: 600;">Maruli Panggabean</span> a Product Designer with 3 years experiences. Currently I'm developing my skill in programming, so in 3 years I can be a <span style="font-weight: 600;">Creative Designer</span>. Wish me luck!
+            <br><br>It's so fun to learn code so I can create my dream web/app by myself. I have goals that I can be mastering <span style="font-weight: 600;">Three.js</span> and <span style="font-weight: 600;">fullstack things</span>. Then one day I will build <span style="font-weight: 600;">my own developer studio</span>. </h6>
+        </div>
+        <div class="card">
+            <div class="card-photo">
+                <img src="./asset/me.jpg" alt="Photo">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="skills" id="skills">
+        <div class="skill">
+            <div class="card-skill">
+                <div class="cards">
+                    <div>
+                        <img src="./asset/photoshop.png" alt="Photoshop">
                     </div>
+                    <div><h5 style="color: var(--white);">Graphic Design</h5></div>
+                    <div><h6 style="color: var(--grey); font-weight: 200;">Create visual communications such as adverts, branding, publicity materials and magazine layouts.</h6></div>
+                </div>
+                <div class="cards">
+                    <div>
+                        <img src="./asset/figma.png" alt="Figma">
+                    </div>
+                    <div><h5 style="color: var(--white);">Product Designer</h5></div>
+                    <div><h6 style="color: var(--grey); font-weight: 200;">Do user research, prototyping, visualization, testing, analyzing, and communicating.</h6></div>
+                </div>
+                <div class="cards">
+                    <div>
+                        <img src="./asset/js.png" alt="Javascript">
+                    </div>
+                    <div><h5 style="color: var(--white);">Front End</h5></div>
+                    <div><h6 style="color: var(--grey); font-weight: 200;">Determining the structure and design of web pages, striking a balance between functional and aesthetic design, and ensuring web design is optimized for smartphones.</h6></div>
+                </div>
+                <div class="cards">
+                    <div>
+                        <img src="./asset/go-programming-language-computer-programming-programmer-programming-language-e34bccd33eb2283fcf59d64bae967cb7.png" alt="Golang">
+                    </div>
+                    <div><h5 style="color: var(--white);">Back End</h5></div>
+                    <div><h6 style="color: var(--grey); font-weight: 200;">Creating, maintaining, testing, and debugging the entire back end of an application or system. Includes the core application logic, databases, data and application integration, API, and other processes taking place behind the scenes.</h6></div>
                 </div>
             </div>
         </div>
-        <div style="display: flex; flex-direction: column; height: fit-content; width: 100%; padding-top: 24px;">
-            <div style="display: flex; justify-content: space-between;">
-                <div style="display: flex; justify-content: center; align-items: center; gap: 6px;">
-                    <img src="/asset/linkedin.png" alt="Linkedin"
-                    style="width: 24px; height: 24px;">
-                    <a style="text-decoration:none;" href="https://www.linkedin.com/in/maruli-panggabean/"><p style="font-weight: 400; font-size: 10pt; color: #333;">Maruli Panggabean</p></a>
-                </div>
-                <div style="display: flex; justify-content: center; align-items: center; gap: 6px;">
-                    <img src="/asset/instagram.png" alt="Instagram"
-                    style="width: 24px; height: 24px;">
-                    <a style="text-decoration:none;" href="https://www.instagram.com/maruli.png/"><p style="font-weight: 400; font-size: 10pt; color: #333;">Maruli Panggabean</p></a>
-                </div>
-                <div style="display: flex; justify-content: center; align-items: center; gap: 6px;">
-                    <img src="/asset/facebook.png" alt="Facebook"
-                    style="width: 24px; height: 24px;">
-                    <a style="text-decoration:none;" href="https://www.facebook.com/Maruli.Panggabean.97/"><p style="font-weight: 400; font-size: 10pt; color: #333;">Maruli Panggabean</p></a>
-                </div>
-                <div style="display: flex; justify-content: center; align-items: center; gap: 6px;">
-                    <img src="/asset/twitter.png" alt="Twitter"
-                    style="width: 24px; height: 24px;">
-                    <a style="text-decoration:none;" href="https://www.google.com/"><p style="font-weight: 400; font-size: 10pt; color: #333;">Maruli Panggabean</p></a>
-                </div>
-            </div>
+        <div class="tools">
+
         </div>
+    </div>
+
 </body>
+
+<!--footer-->
+
+<footer id="contact">
+    <div class="wrapper">
+        <div class="title">
+            <div class="caption">
+                <h1>LET'S DO COLLABORATION AND MAKE AN <span>AWESOME</span> PRODUCT 🚀</h1>
+            </div>
+            <div class="sosmed">
+                <div class="linkedin">
+                    <a href="https://www.linkedin.com/in/maruli-panggabean/"><img src="./asset/linkedin.png" alt="Linkedin"></a>
+                </div>
+                <div class="facebook">
+                    <a href="https://www.facebook.com/Maruli.Panggabean.97/"><img src="./asset/facebook.png" alt="Facebook"></a>
+                </div>
+                <div class="instagram">
+                    <a href="https://www.instagram.com/maruli.png/"><img src="./asset/instagram.png" alt="Instagram"></a>
+                </div>
+                <div class="twitter">
+                    <a href="https://twitter.com/"><img src="./asset/twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <form>
+                <div class="name">
+                    <label for="name"><h6>Name</h6></label>
+                    <input type="text" id="name">
+                </div>
+                <div class="email">
+                    <label for="email"><h6>Email</h6></label>
+                    <input type="email" id="email">
+                </div>
+                <div class="phone">
+                    <label for="phone"><h6>Phone</h6></label>
+                    <input type="text" id="phone">
+                </div>
+                <div class="dropdown">
+                    <label for="dropdown"><h6>Subject</h6></label>
+                    <select id="dropdown" style="width: 270px;">
+                        <option value="Let's Talk">Let's Talk</option>
+                        <option value="Let's Collaboration">Let's Collaboration</option>
+                        <option value="I'm Hiring">I'm Hiring</option>
+                    </select>
+                </div>
+                <div class="message">
+                    <label for="message"><h6>Message</h6></label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <button type="button" id="submit"><h6 style="color: var(--white);">Submit</h6></button>
+            </form>
+        </div>
+    </div>
+</footer>
 </html>
