@@ -47,7 +47,7 @@
     <div class="portfolio-wrapper">
         <div class="port-form">
             <div class="form-title"><h1>ADD NEW PROJECT</h1></div>
-            <form class="form-portfolio" onsubmit="getContent(event)">
+            <form class="form-portfolio" onsubmit="inputProject(event)">
                 <div class="form-portfolio-left">
                     <div class="project-name">
                         <label for="project-name"><h6>PROJECT NAME</h6></label>
@@ -104,14 +104,14 @@
                 <h1>MY PROJECTS</h1>
             </div>
             <div class="content-project" id="card-content">
+                <!--dinamic content is listing here-->
                 <div class="content-card">
                     <div class="content-photo">
                         <img src="./asset/coastalworld.png" alt="banner">
                     </div>
                     <a href="project-detail.html" target="_blank"><h6>COASTAL WORLD</h6></a>
                     <br>
-                    <p>START DATE: 07/13/2023</p>
-                    <p>END DATE: 10/03/2023</p>
+                    <p>DURATION: 2 MONTHS</p>
                     <br>
                     <p>This website is created by me and my friend. Coastal World belongs to Coastal Community Bank that was my client of this project.</p>
                     <br>
@@ -183,5 +183,5 @@
         </form>
     </div>
 </footer>
-<script src="./js/script.js"></script>
+<script src="./js/content.js"></script>
 </html>
