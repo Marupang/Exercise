@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+
+//-------------function on footer-start--------------//
+>>>>>>> Day-4
 function getDataForm() {
     //get value from input
     const name = document.getElementById("name").value
@@ -12,7 +17,11 @@ function getDataForm() {
     }   else if(email == ""){
         return alert ("Please input your email")
     }   else if(phone == ""){
+<<<<<<< HEAD
         return alert ("Please input your phone nummber")
+=======
+        return alert ("Please input your phone number")
+>>>>>>> Day-4
     }   else if(dropdown == ""){
         return alert ("Please select the subject")
     }   else if(message == ""){
@@ -34,4 +43,10 @@ function getDataForm() {
     }
 
     console.log(dataForm)
+<<<<<<< HEAD
 }
+=======
+}
+
+//-------------function on footer-end--------------//
+>>>>>>> Day-4

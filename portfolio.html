@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./asset/Frame 20.ico">
+</head>
+<body>
+    <!--Nav start-->
+    <nav>
+        <div class="nav-l">
+            <div class="logo">
+                <a href="/index.html# "><h5 style="font-family: 'Barlow', sans-serif; font-size: 1rem; font-weight: 700; user-select: none; letter-spacing: 0px">MARUPANG</h5></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="/index.html# "><h5>HOME</h5></a>
+                    </li>
+                    <li>
+                        <a href="/index.html#about"><h5>ABOUT</h5></a>
+                    </li>
+                    <li>
+                        <a href="/index.html#skills"><h5>SKILLS</h5></a>
+                    </li>
+                    <li>
+                        <a href="/portfolio.html#contact"><h5>CONTACT</h5></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="portfolio">
+            <a href="/portfolio.html"><h5>PORTFOLIO</h5></a>
+        </div>
+    </nav>
+    <!--Nav end-->
+
+    <div class="portfolio-wrapper">
+        <div class="port-form">
+            <div class="form-title"><h1>ADD NEW PROJECT</h1></div>
+            <form class="form-portfolio" onsubmit="inputProject(event)">
+                <div class="form-portfolio-left">
+                    <div class="project-name">
+                        <label for="project-name"><h6>PROJECT NAME</h6></label>
+                        <input type="text" id="project-name">
+                    </div>
+                    <div class="project-time">
+                        <div class="project-time-start">
+                            <label for="start-date"><h6>START DATE</h6></label>
+                            <input type="date" id="start-date">
+                        </div>
+                        <div class="project-time-end">
+                            <label for="end-date"><h6>END DATE</h6></label>
+                            <input type="date" id="end-date">
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <div class="project-tech-check">
+                            <input type="checkbox" name="node" id="node" value="NODE">
+                            <label style="margin-bottom: 2px;" for="node"><h6>NODE.JS</h6></label>
+                        </div>
+                        <div class="project-tech-check">
+                            <input type="checkbox" name="next" id="next" value="NEXT">
+                            <label style="margin-bottom: 2px;" for="next"><h6>NEXT.JS</h6></label>
+                        </div>
+                        <div class="project-tech-check">
+                            <input type="checkbox" name="react" id="react" value="REACT">
+                            <label style="margin-bottom: 2px;" for="react"><h6>REACT.JS</h6></label>
+                        </div>
+                        <div class="project-tech-check">
+                            <input type="checkbox" name="ts" id="ts" value="TYPESCRIPT">
+                            <label style="margin-bottom: 2px;" for="ts"><h6>TYPESCRIPT</h6></label>
+                        </div>
+                    </div>
+                    <div class="project-img">
+                        <label><h6>UPLOAD IMAGE</h6></label>
+                        <div class="project-img-button">
+                            <label for="img">
+                                <h6 style="cursor: pointer;">attach file</h6></label><img src="./asset/attach.png" alt="Attach">
+                            <input type="file" id="img" hidden>
+                        </div>
+                    </div>
+                    <div class="button-content">
+                        <button><h6 style="color: var(--white);">POST CONTENT</h6></button>
+                    </div>
+                </div>
+                <div class="project-desc">
+                    <label for="project-desc"><h6>DESCRIPTION</h6></label>
+                    <textarea style="padding-bottom: 8px;" name="description" id="project-desc" rows="11"></textarea>
+                </div>
+            </form>
+        </div>
+        <div class="content-wrapper">
+            <div class="content-title">
+                <h1>MY PROJECTS</h1>
+            </div>
+            <div class="content-project" id="card-content">
+                <!--dinamic content is listing here-->
+                <div class="content-card">
+                    <div class="content-photo">
+                        <img src="./asset/coastalworld.png" alt="banner">
+                    </div>
+                    <a href="project-detail.html" target="_blank"><h6>COASTAL WORLD</h6></a>
+                    <br>
+                    <p>DURATION: 2 MONTHS</p>
+                    <br>
+                    <p>This website is created by me and my friend. Coastal World belongs to Coastal Community Bank that was my client of this project.</p>
+                    <br>
+                    <div class="content-card-icon">
+                        <img src="./asset/atom.png" alt="react">
+                        <img src="./asset/next.png" alt="next">
+                        <img src="./asset/node-js.png" alt="node">
+                        <img src="./asset/typescript.png" alt="ts">
+                    </div>
+                    <br>
+                    <br>
+                    <div class="content-card-button">
+                        <button id="card-button-edit"><h6>EDIT</h6></button>
+                        <button id="card-button-delete"><h6>DELETE</h6></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer id="contact">
+    <div class="contact-title">
+        <div class="caption">
+            <h3 style="font-size: 3.5rem;line-height: 1.2;">LET'S MAKE COLLABORATION AND MAKE AN <span style="text-decoration: underline;">AWESOME</span> PRODUCT.</h3>
+        </div>
+        <div class="sosmed">
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/maruli-panggabean/"><img src="./asset/linkedin.png" alt="Linkedin"></a>
+            </div>
+            <div class="facebook">
+                <a href="https://www.facebook.com/Maruli.Panggabean.97/"><img src="./asset/facebook.png" alt="Facebook"></a>
+            </div>
+            <div class="instagram">
+                <a href="https://www.instagram.com/maruli.png/"><img src="./asset/instagram.png" alt="Instagram"></a>
+            </div>
+            <div class="twitter">
+                <a href="https://twitter.com/"><img src="./asset/twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </div>
+    <div class="form">
+        <form class="form-footer">
+            <div class="name">
+                <label for="name"><h6>NAME</h6></label>
+                <input type="text" id="name">
+            </div>
+            <div class="email">
+                <label for="email"><h6>EMAIL</h6></label>
+                <input type="email" id="email">
+            </div>
+            <div class="phone">
+                <label for="phone"><h6>PHONE</h6></label>
+                <input type="text" id="phone">
+            </div>
+            <div class="dropdown">
+                <label for="dropdown"><h6>SUBJECT</h6></label>
+                <select style="font-family: 'Barlow', sans-serif; width: 308px; font-weight: 600;" id="dropdown">
+                    <option value="Let's Talk">Let's Talk</option>
+                    <option value="Let's Collaboration">Let's Collaboration</option>
+                    <option value="I'm Hiring">I'm Hiring</option>
+                </select>
+            </div>
+            <div class="message">
+                    <label for="message"><h6>MESSAGE</h6></label>
+                    <textarea rows="2" name="message" id="message"></textarea>
+            </div>
+            <button type="button" id="submit" onclick="getDataForm()"><h6 style="color: var(--white);">SUBMIT</h6></button>
+        </form>
+    </div>
+</footer>
+<script src="./js/content.js"></script>
+</html>
