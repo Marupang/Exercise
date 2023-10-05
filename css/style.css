@@ -76,9 +76,10 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
+    height: 48px;
     width: 100%;
     position: fixed;
+    background-color: var(--white);
 }
 
 .nav-l {
