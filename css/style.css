@@ -124,12 +124,11 @@ nav {
     display: flex;
     justify-content: start;
     align-items: end;
-    height: 40%;
+    height: 50%;
     width: 100%;
     border-bottom: 2px solid;
     border-color: var(--black);
     padding-bottom: 8px;
-
 }
 
 .hero .fd-2 {
@@ -851,3 +850,10 @@ textarea {
     border-right: inherit;
     border-bottom: 2px solid var(--black);
 }
+
+
+
+/*==================================================================================
+======================================TABLET========================================
+==================================================================================*/
+
