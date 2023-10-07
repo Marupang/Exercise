@@ -851,9 +851,40 @@ textarea {
     border-bottom: 2px solid var(--black);
 }
 
+.rating {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    height: 100vh;
+    gap: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
 
+.rating-left {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    
+}
+
+.rating-right {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
 
 /*==================================================================================
 ======================================TABLET========================================
 ==================================================================================*/
+
+
+
+
+/*==================================================================================
+======================================PHONE========================================
+==================================================================================*/
+
 
